@@ -1,1 +1,1 @@
-# jfrog-pipeline-examples
+# jfrog-pipelines-docker-build-push
