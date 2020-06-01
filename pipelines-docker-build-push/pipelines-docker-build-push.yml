@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: github_admin   # replace with your integration
-      path: kfiravr2/jfrog-pipelines-docker-build-push    # replace with your repository name
+      path: kfiravr2/jfrog-pipelines-docker-build-push/pipelines-docker-build-push    # replace with your repository name
       branches:
         include: master
 
@@ -54,7 +54,7 @@ pipelines:
         configuration:
           dockerFileLocation: .
           dockerFileName: Dockerfile
-          dockerImageName: artifactory1:8081/docker-local/alpine37
+          dockerImageName: kfira1-docker.jfrog.io/alpine37
           dockerImageTag: ${run_number}
           inputResources:
             - name: repo_1_docker_build_push
