@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: github_admin   # replace with your integration
-      path: kfiravr2/jfrog-pipelines-docker-build-push/pipelines-docker-build-push    # replace with your repository name
+      path: kfiravr2/jfrog-pipelines-docker-build-push    # replace with your repository name
       branches:
         include: master
 
